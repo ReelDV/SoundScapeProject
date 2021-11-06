@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class AudioPlay : MonoBehaviour
 {
-    public AudioSource Enter;
+    public AudioSource audioPlay;
+    public AudioClip Enter;
     public AudioClip Exit;
-
 
     private void OnTriggerEnter(Collider other)
     {
-        Enter.Play();
+        audioPlay.clip = Enter;
+        audioPlay.Play();
     }
     private void OnTriggerExit(Collider other)
     {
-        Enter.clip = Exit;
-        Enter.Play();
+        audioPlay.clip = Exit;
+        audioPlay.Play();
     }
 }

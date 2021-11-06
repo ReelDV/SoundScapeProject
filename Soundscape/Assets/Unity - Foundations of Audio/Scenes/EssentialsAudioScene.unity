@@ -884,10 +884,10 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 4030741365910206486, guid: f5c677ca0cb701d4e86f7030a0a70d60,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 20563088e2d1ebc43902d40c1a1189f4, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1115,7 +1115,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -5203516958734625521, guid: f5c677ca0cb701d4e86f7030a0a70d60,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 9ea5facc1cb8b4c4fb4277f0f6b063e1, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -8040,7 +8040,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -8161,7 +8161,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5da709655092134bb3bfbfefef40796, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enter: {fileID: 1038720629}
+  audioPlay: {fileID: 1038720629}
+  Enter: {fileID: 8300000, guid: f8b5ded0a9a32b84a8557ef43c9596c1, type: 3}
   Exit: {fileID: 8300000, guid: 3586f9660833f004a82bba4711182ee2, type: 3}
 --- !u!4 &1062914352 stripped
 Transform:
@@ -10593,6 +10594,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1735081692}
   - component: {fileID: 1735081691}
+  - component: {fileID: 1735081693}
+  - component: {fileID: 1735081694}
   m_Layer: 0
   m_Name: Sink
   m_TagString: Untagged
@@ -10612,10 +10615,10 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 6384373205292396100, guid: 30f683e923390824aa9106aea5c6744b,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 21af3e2b39bc3794eaa0209364e3afff, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -10711,6 +10714,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1735081693
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735081690}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1735081694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735081690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5da709655092134bb3bfbfefef40796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioPlay: {fileID: 0}
+  Enter: {fileID: 1735081691}
+  Exit: {fileID: 8300000, guid: efe5e9e10afc4964a9980c7deb453b8a, type: 3}
 --- !u!1 &1744929583 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 808c570684602574e8b98fbb9717fff3,
