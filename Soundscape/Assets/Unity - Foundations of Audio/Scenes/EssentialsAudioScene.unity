@@ -8016,6 +8016,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1038720630}
   - component: {fileID: 1038720629}
+  - component: {fileID: 1038720632}
+  - component: {fileID: 1038720631}
   m_Layer: 0
   m_Name: Fridge
   m_TagString: Untagged
@@ -8034,8 +8036,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -4038269593266250137, guid: f5c677ca0cb701d4e86f7030a0a70d60,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: ee2be16ffb16b5743892475d69f94f7e, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: f8b5ded0a9a32b84a8557ef43c9596c1, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -8134,6 +8136,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1038720631
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038720628}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.06, y: 1.61, z: 1}
+  m_Center: {x: 0.09, y: 0, z: 0.03}
+--- !u!114 &1038720632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038720628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5da709655092134bb3bfbfefef40796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enter: {fileID: 1038720629}
+  Exit: {fileID: 8300000, guid: 3586f9660833f004a82bba4711182ee2, type: 3}
 --- !u!4 &1062914352 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1630644787738979553, guid: 4fd708aad127a3e47b99ede847452144,

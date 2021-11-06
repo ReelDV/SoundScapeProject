@@ -5,7 +5,6 @@ using UnityEngine.Audio;
 
 public class SnapShotCollider : MonoBehaviour
 {
-
     public AudioMixerSnapshot Day;
     public AudioMixerSnapshot Night;
 
