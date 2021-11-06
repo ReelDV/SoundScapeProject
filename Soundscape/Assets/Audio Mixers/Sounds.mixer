@@ -17,7 +17,7 @@ AudioMixerGroupController:
   - {fileID: -2340037314423210962}
   m_UserColorIndex: 0
   m_Mute: 0
-  m_Solo: 1
+  m_Solo: 0
   m_BypassEffects: 0
 --- !u!244 &-9155083252834352847
 AudioMixerEffectController:
@@ -124,6 +124,7 @@ AudioMixerController:
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
   - {fileID: 24500006}
+  - {fileID: 4630994074985728095}
   m_StartSnapshot: {fileID: 24500006}
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
@@ -163,7 +164,7 @@ AudioMixerGroupController:
   m_Effects:
   - {fileID: 24400004}
   m_UserColorIndex: 0
-  m_Mute: 0
+  m_Mute: 1
   m_Solo: 0
   m_BypassEffects: 0
 --- !u!244 &24400004
@@ -189,7 +190,12 @@ AudioMixerSnapshotController:
   m_Name: Day
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: cbae42fd150c68840b2373bda4d328c8
-  m_FloatValues: {}
+  m_FloatValues:
+    93831903e96e0814cb4310b0e5957f8c: -5.7224774
+    d38088f8589cd7447ba0b8cddaaaf85e: -3.5090396
+    1eee67f9a990aa7408e2e84332ac01bc: -7.436929
+    0e86207ce84fbd740ab3e287380a5887: -0.02577656
+    d6cbcb2da03bf0d4e870615ccfe563e6: -2.5738313
   m_TransitionOverrides: {}
 --- !u!243 &1063936406857679658
 AudioMixerGroupController:
@@ -262,6 +268,22 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!245 &4630994074985728095
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Night
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: c6d6208bc47b5f349bc5ad6c48fa2135
+  m_FloatValues:
+    93831903e96e0814cb4310b0e5957f8c: -5.7224774
+    d38088f8589cd7447ba0b8cddaaaf85e: -3.5090396
+    1eee67f9a990aa7408e2e84332ac01bc: -7.436929
+    0e86207ce84fbd740ab3e287380a5887: -0.02577656
+    d6cbcb2da03bf0d4e870615ccfe563e6: -2.5738313
+  m_TransitionOverrides: {}
 --- !u!243 &6101519723357248193
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
