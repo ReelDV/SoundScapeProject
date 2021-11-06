@@ -865,6 +865,8 @@ GameObject:
   m_Component:
   - component: {fileID: 322500254}
   - component: {fileID: 322500253}
+  - component: {fileID: 322500256}
+  - component: {fileID: 322500255}
   m_Layer: 0
   m_Name: Chair 2
   m_TagString: Untagged
@@ -983,6 +985,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &322500255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322500252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f998675d5fa7746b8628ee270c2eee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioPlay: {fileID: 322500253}
+  Enter: {fileID: 8300000, guid: c5f9c4b6d0fde8f48be0e656b2a44aa3, type: 3}
+--- !u!65 &322500256
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322500252}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1490359, y: 1, z: 1.0157797}
+  m_Center: {x: -0.29407156, y: 0, z: 0.007889867}
 --- !u!1 &324020563 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d288a7c230f2a6347aba539f26104c09,
@@ -1096,6 +1125,8 @@ GameObject:
   m_Component:
   - component: {fileID: 386994365}
   - component: {fileID: 386994364}
+  - component: {fileID: 386994367}
+  - component: {fileID: 386994366}
   m_Layer: 0
   m_Name: Chair
   m_TagString: Untagged
@@ -1118,7 +1149,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1214,6 +1245,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &386994366
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386994363}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.81842184, y: 1, z: 1.0200858}
+  m_Center: {x: 0.10322976, y: 0, z: 0.07702553}
+--- !u!114 &386994367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386994363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f998675d5fa7746b8628ee270c2eee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioPlay: {fileID: 386994364}
+  Enter: {fileID: 8300000, guid: 4d16e7ae54b11da41b2b981ae633c809, type: 3}
 --- !u!1 &411576407
 GameObject:
   m_ObjectHideFlags: 0
@@ -1224,6 +1282,8 @@ GameObject:
   m_Component:
   - component: {fileID: 411576409}
   - component: {fileID: 411576408}
+  - component: {fileID: 411576410}
+  - component: {fileID: 411576411}
   m_Layer: 0
   m_Name: Chair 3
   m_TagString: Untagged
@@ -1243,10 +1303,10 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 6101519723357248193, guid: f5c677ca0cb701d4e86f7030a0a70d60,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: d65549380759d23489865d46f06248a6, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1342,6 +1402,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &411576410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411576407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f998675d5fa7746b8628ee270c2eee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioPlay: {fileID: 411576408}
+  Enter: {fileID: 8300000, guid: 8ca039e6eb07fb143a65792e5b260d00, type: 3}
+--- !u!65 &411576411
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411576407}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.97651315, y: 1, z: 1}
+  m_Center: {x: 0.2169112, y: 0, z: 0}
 --- !u!1 &413291286 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: ce7f2e955080e344888dc16146705f75,
@@ -8887,6 +8974,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1336461207}
   - component: {fileID: 1336461208}
+  - component: {fileID: 1336461210}
+  - component: {fileID: 1336461209}
   m_Layer: 0
   m_Name: Microwave
   m_TagString: Untagged
@@ -8920,10 +9009,10 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 1063936406857679658, guid: f5c677ca0cb701d4e86f7030a0a70d60,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 88e65633412333342899701dcc9a3fae, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -9005,6 +9094,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1336461209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336461206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f998675d5fa7746b8628ee270c2eee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioPlay: {fileID: 1336461208}
+  Enter: {fileID: 8300000, guid: 88e65633412333342899701dcc9a3fae, type: 3}
+--- !u!65 &1336461210
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336461206}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1832092, y: 1.6940714, z: 1}
+  m_Center: {x: 0.09160459, y: -0.3470357, z: 0}
 --- !u!1 &1359063143
 GameObject:
   m_ObjectHideFlags: 0
@@ -10739,8 +10855,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5da709655092134bb3bfbfefef40796, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioPlay: {fileID: 0}
-  Enter: {fileID: 1735081691}
+  audioPlay: {fileID: 1735081691}
+  Enter: {fileID: 8300000, guid: 21af3e2b39bc3794eaa0209364e3afff, type: 3}
   Exit: {fileID: 8300000, guid: efe5e9e10afc4964a9980c7deb453b8a, type: 3}
 --- !u!1 &1744929583 stripped
 GameObject:
@@ -10771,6 +10887,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1785935454}
   - component: {fileID: 1785935453}
+  - component: {fileID: 1785935455}
+  - component: {fileID: 1785935456}
   m_Layer: 0
   m_Name: Glass
   m_TagString: Untagged
@@ -10790,10 +10908,10 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -9173788236143597015, guid: f5c677ca0cb701d4e86f7030a0a70d60,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: e85e7a567c534384c9702c9f45419f3c, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -10889,6 +11007,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1785935455
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785935452}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4302049, y: 2.7983687, z: 1.58}
+  m_Center: {x: 0.22069645, y: 0.13149035, z: 0}
+--- !u!114 &1785935456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785935452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f998675d5fa7746b8628ee270c2eee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioPlay: {fileID: 1785935453}
+  Enter: {fileID: 8300000, guid: e85e7a567c534384c9702c9f45419f3c, type: 3}
 --- !u!1 &1815780716 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 17375844b831e7d40b837f42d6911973,
