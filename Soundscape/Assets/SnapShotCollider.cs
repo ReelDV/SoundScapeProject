@@ -23,6 +23,7 @@ public class SnapShotCollider : MonoBehaviour
             else if (isNight)
             {
                 Day.TransitionTo(0.5f);
+                isNight = false;
             }
         }
         
